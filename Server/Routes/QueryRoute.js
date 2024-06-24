@@ -11,6 +11,8 @@ query_Route.use(bodyParser.urlencoded({ extended: true })); // Parses URL-encode
 
 // Define routes
 query_Route.get('/home', queryController.getHome);
+query_Route.get('/getQueries', queryController.getAllQueries);
+query_Route.get('/:keyword', queryController.openQueryPage);
 query_Route.post('/createShortcut', queryController.createShortcut);
 
 // Export the router

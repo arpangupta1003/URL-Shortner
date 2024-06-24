@@ -11,6 +11,8 @@ user_Route.use(bodyParser.urlencoded({ extended: true })); // Parses URL-encoded
 
 // Define routes
 user_Route.get('/home', userController.getHome);
+user_Route.get('/getAllUsers', userController.getAllUsers);
+
 user_Route.post('/createUser', userController.createUser);
 
 // Export the router
