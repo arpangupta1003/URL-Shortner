@@ -13,7 +13,7 @@ app.use('/query/',query_Route);
 
 // app.use('/keyword/')
 
-const port=8000 || process.env.PORT
+const port=5000 || process.env.PORT
 app.listen(port,()=>{
     console.log(`server running succesfully on port ${port}`);
 })
